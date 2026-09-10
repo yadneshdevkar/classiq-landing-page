@@ -40,7 +40,7 @@ function setView(view) {
     authForm.reset();
     const signup = view === "signup";
     authTitle.textContent = signup ? "Sign Up" : "Login";
-    authSubmit.textContent = "SignUp";
+    authSubmit.textContent = signup ? "SignUp" : "Login";
     authName.hidden = !signup;
     authNameLabel.hidden = !signup;
     authName.required = signup;
