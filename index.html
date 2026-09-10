@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassIQ — Empower Your Learning Journey</title>
+    <meta
+      name="description"
+      content="Unlock a world of knowledge and skills with ClassIQ's innovative online courses, expert instructors, and interactive learning tools."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Header view ===== -->
+    <header class="site-header">
+      <div class="container header__inner">
+        <div class="logo_container">
+          <a href="#home" class="logo" data-view-link="landing">
+            <img
+              src="./assets/images/HeaderLogo.svg"
+              alt="logo"
+              class="logo__icon"
+              width="49"
+              height="49"
+            />
+            <span class="logo__text">ClassIQ</span>
+          </a>
+        </div>
+
+        <div class="header__actions">
+          <nav class="main-nav" id="main-nav">
+            <ul class="main-nav__list">
+              <li><a href="#courses" class="nav-link">Courses</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-btn-container">
+            <a href="#login" class="btn btn--dark" data-view-link="login"
+              >Login</a
+            >
+            <a href="#signup" class="btn btn--dark" data-view-link="signup"
+              >Sign Up</a
+            >
+          </div>
+
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--  Auth View -->
+    <main id="auth-view" class="auth-view" hidden>
+      <section class="auth-card" aria-labelledby="auth-title">
+        <h1 id="auth-title">Login</h1>
+        <form id="auth-form" class="auth-form">
+          <label for="auth-email">Email</label>
+          <input
+            id="auth-email"
+            name="email"
+            type="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <label id="auth-name-label" for="auth-name" hidden>Name</label>
+          <input
+            id="auth-name"
+            name="name"
+            type="text"
+            placeholder="Enter Your Full Name"
+            hidden
+          />
+          <label for="auth-password">Password</label>
+          <input
+            id="auth-password"
+            name="password"
+            type="password"
+            placeholder="Enter Your Password"
+            required
+            minlength="6"
+          />
+          <button type="submit" class="auth-submit">Sign In</button>
+        </form>
+        <p class="auth-switch" id="auth-switch"></p>
+      </section>
+    </main>
+
+    <!-- Logged In Biew -->
+    <main id="logged-in-view" class="logged-in-view" hidden>
+      <section class="logged-banner" aria-labelledby="logged-title">
+        <div class="logged-copy">
+          <p class="logged-eyebrow">Enroll in your favorite courses</p>
+          <p class="logged-subtitle">And Here’s Why You Should</p>
+          <ul>
+            <li>Certifications</li>
+            <li>Expert Instructors</li>
+            <li>Affordable Pricing</li>
+          </ul>
+          <h1 id="logged-title">LEARN WITH CLASSIQ</h1>
+        </div>
+        <img
+          src="./assets/images/LoggedInBannerMan.svg"
+          alt="Student learning with a laptop"
+        />
+      </section>
+      <section class="logged-courses" id="courses">
+        <div class="logged-courses-header">
+          <h2>All Courses</h2>
+          <img src="./assets/images/ArrowBack.svg" alt="Share icon" />
+        </div>
+        <div class="logged-course-grid">
+          <article class="logged-course-card">
+            <span>3</span>
+            <h3>Fundamental<br />Web Dev</h3>
+          </article>
+          <article class="logged-course-card">
+            <h3>Science<br />Basics</h3>
+          </article>
+          <article class="logged-course-card">
+            <span>3</span>
+            <h3>Learn<br />Design UI/UX</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Landing page -->
+    <main id="landing-view">
+      <!-- =====  Banner Hero section ===== -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__heading">
+              Empower Your Learning Journey with
+              <span class="hero__highlight">ClassIQ</span>
+            </h1>
+
+            <p class="hero__text">
+              Unlock a world of knowledge and skills with our innovative online
+              courses, expert instructors, and interactive learning tools and
+              skills with our innovative online courses, expert instructors, and
+              interactive learning tools.
+            </p>
+
+            <a href="#courses" class="btn btn--accent">Explore Cources</a>
+          </div>
+
+          <div class="hero__media">
+            <span class="hero__glow" aria-hidden="false"></span>
+
+            <img
+              src="./assets/images/doodleLeft.png"
+              alt=""
+              class="hero__doodle hero__doodle--left"
+              width="52"
+              height="52"
+            />
+
+            <img
+              src="./assets/images/doodleRight.png"
+              alt=""
+              class="hero__doodle hero__doodle--right"
+              width="30"
+              height="28"
+            />
+
+            <img
+              src="./assets/images/BannerMan.png"
+              alt="Illustrated character waving"
+              class="hero__character"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Hero Brands Section ===== -->
+      <section class="brands-section container">
+        <p class="section-title">Trusted by 5,000+ Companies Worldwide</p>
+        <div class="brands-logo-flex">
+          <img src="./assets/images/google-2015 1.svg" alt="Google" />
+          <img src="./assets/images/netflix-3 1.svg" alt="Netflix" />
+          <img src="./assets/images/airbnb 1.svg" alt="Airbnb" />
+          <img src="./assets/images/amazon-2 (1) 1.svg" alt="Google" />
+          <img src="./assets/images/facebook.svg" alt="Google" />
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="container certified-section">
+        <p class="section-title">
+          Certified Courses for <strong>Professionals</strong>
+        </p>
+
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="course-card__icon">
+              <img src="./assets/images/Vector.png" alt="laptopicon" />
+            </div>
+            <p class="course-card__title">Web Development</p>
+            <button class="sm-btn-accent">View Courses</button>
+          </div>
+          <div class="course-card">
+            <div class="course-card__icon">
+              <img src="./assets/images/Vector.png" alt="laptopicon" />
+            </div>
+            <p class="course-card__title">Data Science</p>
+            <button class="sm-btn-accent">View Courses</button>
+          </div>
+          <div class="course-card">
+            <div class="course-card__icon">
+              <img src="./assets/images/Vector.png" alt="laptopicon" />
+            </div>
+            <p class="course-card__title">App Development</p>
+            <button class="sm-btn-accent">View Courses</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 All in one Solution-->
+      <section class="container allInOneSolution">
+        <div class="allInOneContainer">
+          <div class="leftSection">
+            <img
+              src="./assets/images/BannerMan.png"
+              alt=""
+              class="all-in-img"
+            />
+          </div>
+          <div class="rightSection">
+            <h2 class="all-in-title">All-In-One Solution</h2>
+            <ul class="all-list-container">
+              <li class="all-item">
+                <div class="course-card__icon bg-primary">
+                  <img src="./assets/images/iconCarrier.svg" alt="" />
+                </div>
+                <p class="all-list-item">Flexible Learning</p>
+              </li>
+              <li class="all-item">
+                <div class="course-card__icon bg-primary">
+                  <img src="./assets/images/Instructor.svg" alt="" />
+                </div>
+                <p class="all-list-item">Expert Instructors</p>
+              </li>
+              <li class="all-item">
+                <div class="course-card__icon bg-primary">
+                  <img src="./assets/images/Community.svg" alt="" />
+                </div>
+                <p class="all-list-item">Interactive Community</p>
+              </li>
+            </ul>
+
+            <button class="md-btn-accent join-btn">
+              <img src="assets/images/ArrowBack.svg" alt="" class="btn-icon" />
+              <span>Join Now</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer view ===== -->
+    <footer class="site-footer">
+      <div class="container footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/HeaderLogo.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+            <span class="logo__text">ClassIQ</span>
+          </a>
+
+          <h3 class="footer__subscribe-title">Subscribe</h3>
+          <p class="footer__subscribe-text">
+            Subscribe for the latest courses, tips, and updates. Join our
+            learning community today!
+          </p>
+
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn--accent">Subscribe</button>
+          </form>
+        </div>
+
+        <nav class="footer__links">
+          <h3>ClassIQ Bussiness</h3>
+          <ul>
+            <li><a href="#">Teach on ClassIQ</a></li>
+            <li><a href="#">Teaching Tools</a></li>
+            <li><a href="#">ClassIQ app</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__links">
+          <h3>Careers</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container footer__bottom">
+        <p>© 2024 ClassIQ. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <img src="./assets/images/instagram.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="X">
+              <img src="assets/images/twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn">
+              <img src="assets/images/linkedin-logo.png" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
