@@ -695,6 +695,8 @@ button {
 }
 
 /* ------------------------- Authentication ------------------------- */
+
+/* Hide the footer when authentication views are active (Login/Signup) */
 .state-auth .site-footer,
 .state-logged-in .site-footer {
   display: none;
@@ -932,7 +934,6 @@ button {
 }
 
 @media (max-width: 767px) {
-
   .hero__heading {
     font-size: 36px;
     line-height: 1.15;
